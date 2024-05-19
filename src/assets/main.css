@@ -1,0 +1,18 @@
+@import './base.css';
+
+#app {
+  flex: none
+}
+
+@media (hover: hover) {
+  a:hover {
+    text-shadow: #FC0 0em 0em 0em ;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    flex:none
+  }
+
+}
