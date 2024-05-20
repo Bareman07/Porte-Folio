@@ -1,7 +1,7 @@
 <script setup>
 import propos from './Propos.vue'
 import realisation from './Realisation.vue'
-import CV from './CV.vue'
+import CV from './CV/CV.vue'
 import modalContact from './ModalContact.vue'
 </script>
 
