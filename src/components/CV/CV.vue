@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-
 const openPhoto = ref(false)
 const openCV = ref(true)
 </script>
@@ -9,10 +8,12 @@ const openCV = ref(true)
     <head>
         <title>CV Web</title>
     </head> 
+    <Transition name="bounce">
     <div v-if="openCV" class="bodyCV">
         <h1>CV</h1>
         <img @click="openCV = !openCV" src="./img/CVimage.png" alt="Photo du CV" style="height: auto;width: 20em; cursor: pointer;">
     </div>
+    
     <div v-else class="CVElement">
       <div id="text-body">    
             <header id="area-top">
@@ -115,8 +116,9 @@ const openCV = ref(true)
         <button @click="openCV = !openCV">Fermer</button>
         </div>
     </div>
+    </Transition>
 </template>
 
 <style scoped>
-    @import './styleCV.css'
+    @import './styleCV.css';
 </style>
