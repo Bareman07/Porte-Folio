@@ -231,11 +231,15 @@ opacity: 0.6;
     border-radius: 1%;
     width: 40em;;
     text-align: center;
-
+    
 }
 
 .bodyCV h1{
     text-decoration: underline;
+}
+
+.bodyCV :hover{
+    box-shadow: 1em 1em 0.5em #C03221;
 }
 
 button{

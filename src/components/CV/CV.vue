@@ -11,7 +11,7 @@ const openCV = ref(true)
     <Transition name="bounce">
     <div v-if="openCV" class="bodyCV">
         <h1>CV</h1>
-        <img @click="openCV = !openCV" src="./img/CVimage.png" alt="Photo du CV" style="height: auto;width: 20em; cursor: pointer;">
+        <img @click="openCV = !openCV" src="./img/CVimage.png" alt="Photo du CV" style="height: auto;width: 20em; cursor: pointer; margin-bottom: 2em;">
     </div>
     
     <div v-else class="CVElement">

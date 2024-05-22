@@ -53,7 +53,7 @@ function ajouterCommentaire() {
         <textarea id="commentaire" placeholder="Ecrire votre Commentaire"></textarea>        
         <div class="button-container">
             <div class="button-item">
-                <input class="envoyer" type="button" value="Envoyer" onclick="ajouterCommentaire()">
+                <input class="envoyer" type="button" value="Envoyer" @onclick="ajouterCommentaire()">
             </div>
         </div>
     </main>
