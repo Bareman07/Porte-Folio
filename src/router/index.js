@@ -6,13 +6,21 @@ const router = createRouter({
   routes: [
     {
       path: "/", // pour la page accueil
-      name: 'home',
+      name: 'Accueil',
       component: HomeView,
+      meta: {
+        title: 'Accueil',
+        description: 'page daccueil du porte folio'
+      }
     },
     {
       path: "/:pathMatch(.*)*", // pour toutes les autres pages non definies
       name: "NotFound",
-      component: () => import('../views/404.vue')
+      component: () => import('../views/404.vue'),
+      meta: {
+        title: '404',
+        description: 'page non existante'
+      }
     }
   ]
 })
