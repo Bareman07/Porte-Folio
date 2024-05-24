@@ -17,6 +17,9 @@
 
 <style scoped>
     .bodyPropos{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
         background-color: #9197A1;
         border: 0.2em solid #f59f00 ;
         border-radius: 1%;

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
+import pageContact from '@/views/contactPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,6 +12,15 @@ const router = createRouter({
       meta: {
         title: 'Accueil',
         description: 'page daccueil du porte folio'
+      }
+    },
+    {
+      path: "/contact", // pour la page de contact
+      name: 'pageContact',
+      component: pageContact,
+      meta: {
+        title: 'Contact',
+        description: 'page de contact'
       }
     },
     {

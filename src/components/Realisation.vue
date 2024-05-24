@@ -23,8 +23,10 @@ const pdfUrl = urlObject.href;
         <h2>Dynamiser un espace commentaire</h2>
         <a @click="openDynEspaceCom = true" ><img src="../assets/img/dynEspaceCom.png" alt="Ma Photo de CV 2023" class="imgBox" style="cursor: pointer;" ></a>
         <div v-if="openDynEspaceCom" class="modalDynEspaceCom">
+            <h1>Dynamiser un Espace Commentaire</h1>
             <a @click="openDynEspaceCom = false"><img src="../assets/img/dynEspaceCom.png" class="" alt="Ma Photo de CV 2023" style="height: auto; width: 500px;"></a>
             <a href="https://github.com/Bareman07/Dynamiser-un-espace-commentaire.git" style="margin-bottom: 1em;">Lien vers GitHub</a>
+            <div><p>Html/CSS/JavaScript</p><p>02/2024</p></div>
         </div>
         <h2>Cahier des Charges</h2>
         <a @click="openCahierDesCharges = true" ><img src="../assets/img/cahierDesCharges_page-0001.jpg" alt="Cahier des charge presentation" class="imgBox" style="cursor: pointer;" ></a>
@@ -34,6 +36,7 @@ const pdfUrl = urlObject.href;
                 <h1>Télécharger le fichier PDF</h1>
                 <a :href="pdfUrl" download="cahierDesCharges.pdf"><img src="../assets/img/cahierDesCharges_page-0001.jpg" alt="Cahier des charge presentation" ></a>   
             </div>
+            <div><p>Traitement de Texte</p><p>01/2024</p></div>
             <button @click="openCahierDesCharges = false" style="height: 2em; width: 3em;">Exit</button>
         </div>
     </div>

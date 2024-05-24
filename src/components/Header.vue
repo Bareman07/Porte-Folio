@@ -15,7 +15,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <p><a href="#proposBox">A Propos</a></p>
             <p><a href="#realisationBox">Realisation</a></p>
             <p><a href="#CVBox">Curriculum Vitae</a></p>
-            <p><a href="#modalContactBox">Contact</a></p>
+            <RouterLink to="/contact"><p>Contact</p></RouterLink>
         </div>
     </div>
 </template>
