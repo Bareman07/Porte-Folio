@@ -1,59 +1,57 @@
 <script setup>
-// Tableau pour stocker les commentaires
-let commentaires = [];
-
-//Fonction ajout de commentaire
-function ajouterCommentaire() {
-    // Récupérer les valeurs des champs du formulaire
-    var prenom = document.getElementById("prénom").value;
-    var nom = document.getElementById("nom").value;
-    var commentaire = document.getElementById("commentaire").value;
-
-    // Vérifier si tous les champs sont remplis
-    if (prenom === "" || nom === "" || commentaire === "") {
-        alert("Veuillez remplir tous les champs du formulaire.");
-        return;
+const appEnvoi = Vue.createApp({
+  data() {
+    return {
+        prenom: '',
+        nom: '',
+        email: '',
+        message: '',
+        showForm: true
+    };
+  },
+  methods: {
+    submitForm() {
+        // Soumettre le formulaire (vous pouvez ajouter ici la logique pour l'envoi des données)
+        // Pour cet exemple, je vais simplement afficher un message
+        this.message = `Bonjour ${this.nom}${this.prenom}! Votre email (${this.email}) a été envoyé avec succès.`;
+        this.showForm = false; // Cacher le formulaire après soumission
+    },
+    clearForm() {
+        // Effacer les champs du formulaire
+        this.prenom = '';
+        this.nom = '';
+        this.email = '';
+        this.message = ''
     }
+  }
+});
 
-    // Créer un nouvel élément de commentaire
-    var nouveauCommentaire = document.createElement("div");
-    nouveauCommentaire.innerHTML = `
-        <h2>${prenom} ${nom}</h2>
-        <p>${commentaire}</p>
-    `;
-
-    // Ajouter le nouvel élément à la liste de commentaires
-    var commentaireListe = document.getElementById("commentaireListe");
-    commentaireListe.appendChild(nouveauCommentaire);
-
-    // Réinitialiser les champs du formulaire
-    document.getElementById("prénom").value = "";
-    document.getElementById("nom").value = "";
-    document.getElementById("commentaire").value = "";
-}
+app.mount('#appEnvoi');
 </script>
 
 <template>
-    <main class="corpContact">
-        <div id="commentaireListe">
-        <!-- Les commentaires existants seront affichés ici -->
-        </div>
+    <main class="corpContact" id="appEnvoi">
         <h1>Contact</h1>        
         <div class="flex-container">
             <div class="flex-item">
+                <h2>Email</h2>
+                <input type="text" id="email" placeholder="Ecrire votre mail">
+            </div>
+            <div class="flex-item">
                 <h2>Prénom</h2>
-                <input type="text" id="prénom" placeholder="Ecrire votre Prénom">
+                <input type="text" id="prenom" placeholder="Ecrire votre Prénom">
             </div>
             <div class="flex-item">
                 <h2>Nom</h2>
                 <input type="text" id="nom" placeholder="Ecrire votre Nom">
             </div>
         </div>        
-        <h2>Commentaire</h2>
-        <textarea id="commentaire" placeholder="Ecrire votre Commentaire"></textarea>        
+        <h2>Commentaires</h2>
+        <textarea id="message" placeholder="Ecrire votre Message"></textarea>        
         <div class="button-container">
             <div class="button-item">
-                <input class="envoyer" type="button" value="Envoyer" @onclick="ajouterCommentaire()">
+                <input class="envoyer" type="button" value="Envoyer" @click.prevent="submitForm">
+                <button @click="clearForm">Effacer le formulaire</button>
             </div>
         </div>
     </main>
