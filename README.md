@@ -1,16 +1,16 @@
 # porteFolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Ce modèle devrait vous aider à démarrer le développement avec Vue 3 dans Vite.
 
-## Recommended IDE Setup
+##  IDE Recommande Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Customize configuration
+## Configuration personnalisé
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## Installation du projet
 
 ```sh
 npm install
