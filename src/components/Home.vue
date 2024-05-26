@@ -16,9 +16,9 @@ import modalContact from './ModalContact.vue'
     <div id="CVBox" class="elementBox">
       <CV></CV>
     </div>
-    <div id="modalContactBox" class="elementBox">
+    <!-- <div id="modalContactBox" class="elementBox">
       <modalContact></modalContact>
-    </div>
+    </div> -->
     <div class="elementBox">
       <a href="#"><img class="flecheHaut" src="../assets/img/fleche-vers-le-haut.png" alt="fleche vers le haut"></a>
     </div>

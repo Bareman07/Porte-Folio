@@ -13,7 +13,7 @@
             <a href="https://github.com/Bareman07"><img src="../assets/img/signe-github.png" alt="Lien vers Github" class="Link-social-Network"></a>
         </div>
         <div class="onglet">
-            <p>Maj 20/05/2024</p>
+            <p>Maj 26/05/2024</p>
         </div>
     </div>
 </template>

@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 p {
-    font-family: "Raleway", serif; /* la "," choix alternatif*/
+    font-family:  serif; 
     font-size: 0.9em ;
 }
 
 li {
-    font-family: "Raleway", serif;
+    font-family:  serif;
     font-size: 1em ;
 }
 
@@ -238,7 +238,7 @@ opacity: 0.6;
     text-decoration: underline;
 }
 
-.bodyCV :hover{
+.photoDuCv :hover{
     box-shadow: 1em 1em 0.5em #C03221;
 }
 

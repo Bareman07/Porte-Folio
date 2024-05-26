@@ -11,7 +11,13 @@ const openCV = ref(true)
     <Transition name="bounce">
     <div v-if="openCV" class="bodyCV">
         <h1>CV</h1>
-        <img @click="openCV = !openCV" src="./img/CVimage.png" alt="Photo du CV" style="height: auto;width: 20em; cursor: pointer; margin-bottom: 2em;">
+        <div  class="photoDuCv">
+            <img @click="openCV = !openCV" src="./img/CVimage.png" alt="Photo du CV" style="height: auto;width: 20em; cursor: pointer; margin-bottom: 2em;">
+        </div>
+        <p>Mon adresse postal est fictive par securité
+            <br>Le mail et numéro de telephone ainsi que le formulaire de contact 
+            <br>possédent des données réels.
+        </p>
     </div>
     
     <div v-else class="CVElement">
@@ -27,11 +33,11 @@ const openCV = ref(true)
             <address id="area-grey">
                 <a href="https://www.google.com/maps/place/Le+Hazard+-+Votre+Barak+%C3%80+Jeux/@50.7216442,2.5342666,15z/data=!4m6!3m5!1s0x47dce19c86a5a92f:0x3b3cd1fc1329058e!8m2!3d50.7216442!4d2.5342666!16s%2Fg%2F11ty4m5rnf?entry=ttu" class="adress">   
                     <p> 31 Rue du Maréchal Leclerc 
-                    <br>59190 Hazebrouck
+                    <br>59190 Hazebrouck 
                     </p>
                 </a>
-                <a href="mailto:mic.man@gmail.com" class="mail"><p>mic.man@gmail.com</p></a>
-                <a href="tel:0666088366" class="phone"><p>06.66.08.83.66</p></a>
+                <a href="mailto:mickael.bateman@gmail.com" class="mail"><p>mickael.bateman@gmail.com</p></a>
+                <a href="tel:0667088327" class="phone"><p>06.67.08.83.27</p></a>
             </address>
             <main id="area-center">
                 <aside id="area-left">

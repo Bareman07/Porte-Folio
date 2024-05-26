@@ -1,5 +1,12 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView ,useRoute } from 'vue-router';
+import { computed } from 'vue';
+
+const route = useRoute();
+const pageTitle = computed(() => {
+  return route.meta.title || '';
+});
+
 </script>
 
 <template>
@@ -9,7 +16,8 @@ import { RouterLink, RouterView } from 'vue-router'
             <h2>Accueil</h2>
         </div>
         <div class="titre">
-            <h1>Porte Folio</h1>
+            <h1>Porte Folio:</h1>
+            <h2>{{ pageTitle }}</h2>
         </div>
         <div class="onglet">
             <p><a href="#proposBox">A Propos</a></p>

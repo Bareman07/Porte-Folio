@@ -25,7 +25,7 @@ const router = createRouter({
     },
     {
       path: "/:pathMatch(.*)*", // pour toutes les autres pages non definies
-      name: "NotFound",
+      name: 'NotFound',
       component: () => import('../views/404.vue'),
       meta: {
         title: '404',
