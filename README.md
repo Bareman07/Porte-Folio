@@ -1,24 +1,15 @@
-
-
 # porteFolio
 
-Ce modèle devrait vous aider à démarrer le développement avec Vue 3 dans Vite.
+Presentation de mes experiences /realisation et comptences via ce porte folio.
 
-##  IDE Recommande Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Configuration personnalisé
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Installation du projet
+## Installation du projet VueJs 3
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Compile and Hot-Reload for Development (pour le demarrage)
 
 ```sh
 npm run dev
@@ -28,4 +19,22 @@ npm run dev
 
 ```sh
 npm run build
+```
+
+## Installation des modules complementaires
+
+```sh
+npm run build
+```
+### vue3-toastify qui permet des notifications dynamiques et fluides
+
+```sh
+npm install --save vue3-toastify
+# yarn add vue3-toastify
+```
+
+### le SDK EmailJS qui permet d'envoyer des e-mails en utilisant uniquement des technologies côté client
+
+```sh
+npm install --save @emailjs/browser
 ```
