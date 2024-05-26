@@ -23,9 +23,6 @@ npm run build
 
 ## Installation des modules complementaires
 
-```sh
-npm run build
-```
 ### vue3-toastify qui permet des notifications dynamiques et fluides
 
 ```sh
