@@ -4,7 +4,7 @@ import { computed } from 'vue';
 
 const route = useRoute();
 const pageTitle = computed(() => {
-  return route.meta.title || '';
+  return route.meta.title ;
 });
 
 </script>
