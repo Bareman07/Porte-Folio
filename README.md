@@ -1,6 +1,6 @@
 # porteFolio
 
-Presentation de mes experiences /realisation et comptences via ce porte folio.
+Présentation de mes expériences, réalisations et compétences via ce portfolio.
 
 
 ## Installation du projet VueJs 3
@@ -9,21 +9,15 @@ Presentation de mes experiences /realisation et comptences via ce porte folio.
 npm install
 ```
 
-### Compile and Hot-Reload for Development (pour le demarrage)
+### Compile and Hot-Reload for Development (pour le démarrage)
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
 ## Installation des modules complementaires
 
-### vue3-toastify qui permet des notifications dynamiques et fluides
+### vue3-toastify qui permet des notifications dynamiques et fluides.
 
 ```sh
 npm install --save vue3-toastify
