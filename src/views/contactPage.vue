@@ -109,7 +109,7 @@ const clearForm = () => {
 
 <style scoped>
     main {
-        margin-top: 6em;
+        margin-top: 8em;
         display: flex;
         flex-direction:column;
         justify-content:flex-start;
